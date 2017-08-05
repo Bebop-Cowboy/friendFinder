@@ -1,0 +1,40 @@
+1. Create github repository
+2. Create the following directories:
+      FriendFinder
+        - app
+          - data
+            - friends.js
+          - public
+            - home.html
+            - survey.html
+          - routing
+            - apiRoutes.js
+            - htmlRoutes.js
+        - node_modules
+        - package.json
+        - server.js
+3. Write up 10 questions - based on a scale of 1 - 5, based on agree and disagrees.
+
+4. `server.js`require three npm packages:
+    `express`
+    `body-parser`
+    `path`
+
+5. `htmlRoutes.js` should include 2 routes:
+      `/survey` - should lead to the survey page
+      `home.html` - should display the homepage
+
+6. `apiRoutes.js`should include 2 routes:
+      GET `/api/friends` - this will be used to display your json
+      POST `/api/friends` - this will be used to handle incoming survey results. This route will also be used to handle the compatibility logic
+
+
+_______
+
+1. Create `home.html`
+  > display title
+  > display description of the pages
+  > `button` to link to `survey.html`
+
+      - features on this page:
+        CSS packages: jumbotron, "a package that conforms to the users size preferences"

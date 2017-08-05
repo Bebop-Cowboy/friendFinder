@@ -1,0 +1,25 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Friend Finder Survey",
+  "main": "apiRoutes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayjshin/friendFinder.git"
+  },
+  "author": "Ray Shin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rayjshin/friendFinder/issues"
+  },
+  "homepage": "https://github.com/rayjshin/friendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "path": "^0.12.7"
+  }
+}

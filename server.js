@@ -6,7 +6,7 @@ var path = require ("path");
 //express app
 
 var app = express ();
-var PORT = processenv.PORT || 3000;
+var PORT = 3000;
 
 //express app to handle data parsing
 app.use(bodyParser.json());
@@ -34,16 +34,16 @@ var friend = [{
 
   //routes
   app.get("/", function (req, res) {
-    res.sendFile(path.join(_dirname, "home.html"));
+    res.sendFile(path.join(__dirname, "/app/public/home.html"));
   });
 
   app.get("/survey", function (req, res){
-    res.sendFile(path.join(_dirname, "survey/html"));
+    res.sendFile(path.join(__dirname, "/app/public/survey.html"));
   });
 
   //new friend  - JSON inputs
   app.get("/app/:friends?", function(req, res){
-    var = chosen = req.params.friends;
+    var chosen = req.params.friends;
     if (chosen) {
       console.log(chosen);
 
@@ -72,5 +72,5 @@ var friend = [{
   });
 //server to begin listening
   app.listen(PORT, function(){
-    console.log("Friend finder app listening on PORT" + PORT);
+    console.log("Friend finder app listening on PORT " + PORT);
   });
